@@ -23,11 +23,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     @IBAction func guardar(_ sender: UIButton)
     {
+        let contexto = conexion()
+        let entidadPersonas = NSEntityDescription.entity(forEntityName: "Personas", in: contexto)
+        let newPersona = NSManagedObject(entity: entidadPersonas!, insertInto: contexto)
+        let edadPersona = Int16(edad.text!)
+        //set key to value
+        newPersona.setValue(nombre.text, forKey:"nombre")
+        newPersona.setValue(edadPersona, forKey: "edad")
+        newPersona.setValue(activo.isOn, forKey: "activo")
+        
+        do{
+            
+            try contexto.save()
+            nombre.text = ""
+            edad.text = ""
+            activo.isOn = false
+            print("guardado")
+        }
+        catch let error as NSError
+        {
+            print("no guardo", error)
+            
+        }
         
     }
     
