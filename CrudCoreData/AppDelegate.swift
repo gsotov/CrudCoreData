@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CrudCoreData
 //
-//  Created by Gabriel Soto valenzuela on 1/8/19.
-//  Copyright © 2019 Gabriel Soto valenzuela. All rights reserved.
+//  Created by Jorge Maldonado Borbón on 19/08/17.
+//  Copyright © 2017 Jorge Maldonado Borbón. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
