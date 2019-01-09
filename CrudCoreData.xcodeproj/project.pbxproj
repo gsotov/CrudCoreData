@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7A58A4621E625130051F1E7 /* TablaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A58A4521E625130051F1E7 /* TablaViewController.swift */; };
+		D7A58A4A21E6333B0051F1E7 /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A58A4921E6333B0051F1E7 /* EditarViewController.swift */; };
 		FF05267921E58FA90079535A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05267821E58FA90079535A /* AppDelegate.swift */; };
 		FF05267B21E58FA90079535A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05267A21E58FA90079535A /* ViewController.swift */; };
 		FF05267E21E58FA90079535A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF05267C21E58FA90079535A /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7A58A4521E625130051F1E7 /* TablaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaViewController.swift; sourceTree = "<group>"; };
+		D7A58A4921E6333B0051F1E7 /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
 		FF05267521E58FA90079535A /* CrudCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrudCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF05267821E58FA90079535A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF05267A21E58FA90079535A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				FF05267821E58FA90079535A /* AppDelegate.swift */,
 				FF05267A21E58FA90079535A /* ViewController.swift */,
+				D7A58A4521E625130051F1E7 /* TablaViewController.swift */,
+				D7A58A4921E6333B0051F1E7 /* EditarViewController.swift */,
 				FF05267C21E58FA90079535A /* Main.storyboard */,
 				FF05268221E58FAB0079535A /* Assets.xcassets */,
 				FF05268421E58FAB0079535A /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A58A4A21E6333B0051F1E7 /* EditarViewController.swift in Sources */,
 				FF05267B21E58FA90079535A /* ViewController.swift in Sources */,
 				FF05267921E58FA90079535A /* AppDelegate.swift in Sources */,
 				FF05268121E58FA90079535A /* CrudCoreData.xcdatamodeld in Sources */,
+				D7A58A4621E625130051F1E7 /* TablaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

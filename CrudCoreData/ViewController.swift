@@ -79,6 +79,7 @@ class ViewController: UIViewController {
              print("no mostro", error)
         }
     }
+    
     @IBAction func borrar(_ sender: UIButton)
     {
         let contexto = conexion()
@@ -93,5 +94,8 @@ class ViewController: UIViewController {
             print("no borro", error)
         }
     }
+    
+    
+    
 }
 
