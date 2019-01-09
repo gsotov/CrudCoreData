@@ -51,24 +51,55 @@
                                     <action selector="guardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQB-Aa-se4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otu-cg-nm0">
+                                <rect key="frame" x="136" y="352" width="102" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Mostrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqe-dH-EWg"/>
+                                    <action selector="mostrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qkv-Ff-l9X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u26-Ch-6Mc">
+                                <rect key="frame" x="136" y="410" width="102" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Borrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="borrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dae-KU-Vtr"/>
+                                    <action selector="guardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xx1-f6-gIZ"/>
+                                    <action selector="mostrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrZ-1n-0Rb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="otu-cg-nm0" secondAttribute="bottom" constant="265" id="0g3-Sk-Pyo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BEI-4R-Zpu" secondAttribute="bottom" constant="525" id="1ya-Xa-xAY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BEI-4R-Zpu" secondAttribute="trailing" constant="53" id="5Gp-ym-3l0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xpX-C9-qEV" secondAttribute="bottom" constant="323" id="89M-zV-BAO"/>
                             <constraint firstItem="a3f-JB-QEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="9ff-qi-dny"/>
                             <constraint firstItem="I4w-8h-W7O" firstAttribute="centerX" secondItem="a3f-JB-QEB" secondAttribute="centerX" id="DUr-zW-NNN"/>
+                            <constraint firstItem="otu-cg-nm0" firstAttribute="top" secondItem="xpX-C9-qEV" secondAttribute="bottom" constant="8" symbolic="YES" id="Fl2-7U-PJ4"/>
                             <constraint firstItem="BEI-4R-Zpu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="92" id="Gtc-JF-V9a"/>
+                            <constraint firstItem="otu-cg-nm0" firstAttribute="leading" secondItem="xpX-C9-qEV" secondAttribute="leading" id="IEH-o2-5hA"/>
                             <constraint firstItem="I4w-8h-W7O" firstAttribute="top" secondItem="a3f-JB-QEB" secondAttribute="bottom" constant="17" id="IEt-mI-z1j"/>
+                            <constraint firstItem="u26-Ch-6Mc" firstAttribute="leading" secondItem="otu-cg-nm0" secondAttribute="leading" id="Jzt-uk-R2m"/>
                             <constraint firstItem="xpX-C9-qEV" firstAttribute="centerX" secondItem="3Vg-Jg-geT" secondAttribute="centerX" id="SQv-vh-sL4"/>
                             <constraint firstItem="xpX-C9-qEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="VLv-c6-Abw"/>
                             <constraint firstItem="BEI-4R-Zpu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="Y13-nB-Vac"/>
                             <constraint firstItem="I4w-8h-W7O" firstAttribute="centerX" secondItem="3Vg-Jg-geT" secondAttribute="centerX" id="gYt-yX-ucw"/>
+                            <constraint firstItem="u26-Ch-6Mc" firstAttribute="trailing" secondItem="otu-cg-nm0" secondAttribute="trailing" id="hAy-d6-3zg"/>
+                            <constraint firstItem="otu-cg-nm0" firstAttribute="trailing" secondItem="xpX-C9-qEV" secondAttribute="trailing" id="hW5-Mn-Jly"/>
+                            <constraint firstItem="u26-Ch-6Mc" firstAttribute="top" secondItem="otu-cg-nm0" secondAttribute="bottom" constant="8" symbolic="YES" id="iGi-jz-0gO"/>
                             <constraint firstItem="3Vg-Jg-geT" firstAttribute="top" secondItem="I4w-8h-W7O" secondAttribute="bottom" constant="8" symbolic="YES" id="ih8-SG-thZ"/>
                             <constraint firstItem="xpX-C9-qEV" firstAttribute="top" secondItem="3Vg-Jg-geT" secondAttribute="bottom" constant="25" id="lBo-Ty-gZJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3f-JB-QEB" secondAttribute="trailing" constant="53" id="lo2-0S-oDS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a3f-JB-QEB" secondAttribute="bottom" constant="475" id="r8I-5D-Hzu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u26-Ch-6Mc" secondAttribute="bottom" constant="207" id="v94-wA-mOD"/>
                             <constraint firstItem="a3f-JB-QEB" firstAttribute="top" secondItem="BEI-4R-Zpu" secondAttribute="bottom" constant="20" id="yk8-Px-ocC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

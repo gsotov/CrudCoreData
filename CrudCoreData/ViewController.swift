@@ -54,5 +54,44 @@ class ViewController: UIViewController {
     }
     
 
+    @IBAction func mostrar(_ sender: UIButton)
+    {
+        let contexto = conexion()
+        let fetRequest : NSFetchRequest<Personas> = Personas.fetchRequest()
+        
+        do {
+            
+            let resultado = try contexto.fetch(fetRequest)
+            print("numero de registros \(resultado.count)" )
+            
+            for res in resultado as [NSManagedObject]
+            {
+                let nombrePersona = res.value(forKey: "nombre")
+                let edadPersona = res.value(forKey: "edad")
+                let activoPersona = res.value(forKey: "activo")
+                
+                print("nombre: \(nombrePersona!) - edad: \(String(describing: edadPersona)) - activo: \(activoPersona!)" )
+            }
+            
+        }
+        catch let error as NSError
+        {
+             print("no mostro", error)
+        }
+    }
+    @IBAction func borrar(_ sender: UIButton)
+    {
+        let contexto = conexion()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "Personas")
+        let borrar = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        
+        do {
+            try contexto.execute(borrar)
+            print("borro los datos")
+        } catch let error as NSError {
+            print("no borro", error)
+        }
+    }
 }
 
